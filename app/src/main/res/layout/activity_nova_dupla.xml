@@ -13,22 +13,28 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:layout_gravity="left"
         android:id="@+id/editPontos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Pontos"
         android:inputType="number" />
     <EditText
-        android:layout_gravity="right"
         android:id="@+id/editVitorias"
         android:inputType="number"
         android:hint="Numero de Vitorias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <EditText
+        android:id="@+id/editDerrotas"
+        android:inputType="number"
+        android:hint="Numero de derrotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <Button
         android:id="@+id/buttonSalvarDupla"
+        android:onClick="salvarDupla"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#0887dc"

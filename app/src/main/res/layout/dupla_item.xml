@@ -32,4 +32,12 @@
         android:text="Numero de vitorias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textDerrotas"
+        android:textSize="16dp"
+        android:layout_columnSpan="2"
+        android:text="Numero de derrotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </GridLayout>
