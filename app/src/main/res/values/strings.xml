@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ApptTruco</string>
+    <string-array name="opcoes">
+        <item>Remover</item>
+        <item>Atualizar</item>
+        <item>Cancelar</item>
+    </string-array>
 </resources>

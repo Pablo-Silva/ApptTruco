@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shootingstars.appttruco.activity.AtualizarDuplaActivity">
+
+    <EditText
+        android:id="@+id/editDupla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome Dupla"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editPontos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pontos"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/editVitorias"
+        android:inputType="number"
+        android:hint="Numero de Vitorias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editDerrotas"
+        android:inputType="number"
+        android:hint="Numero de derrotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonSalvarDupla"
+        android:onClick="atualizarDupla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0887dc"
+        android:text="Salvar Dupla" />
+
+</LinearLayout>

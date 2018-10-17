@@ -25,12 +25,21 @@ public class DuplaRepository {
     }
 
     public List<Dupla> getAllDuplas(){
+        duplas = duplaDAO.loadDuplas();
         return duplas;
+    }
+
+    public Dupla loadDuplaByID(long ID) {
+        return duplaDAO.loadDuplaByID(ID);
     }
 
     public void insert(Dupla dupla){
         new insertAsyncTask(duplaDAO).execute(dupla);
     }
+
+    public void update(Dupla dupla) {duplaDAO.update(dupla);}
+
+    public void delete(long id){duplaDAO.delete(id);}
 
     private static class insertAsyncTask extends AsyncTask<Dupla,Void,Void> {
 
